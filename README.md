@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-## 📁 Project Folder Structure
-
-```text
-=======
 # CRM Management System (Django)
 
 A fully functional Customer Relationship Management (CRM) web application built using Django.
@@ -50,8 +45,8 @@ Check order status and order date
 
 Contact support details shown in footer
 
-📂 Folder Structure (Based on Your Screenshot)
->>>>>>> 3813c96dc2873050eed70b9888c1b8fb93baf351
+📂 Folder Structure
+
 CRM/
 │── accounts/
 │   ├── templates/accounts/
@@ -171,4 +166,3 @@ Email notifications for order updates
 Deployment on Render / AWS
 
 Add user profile images
->>>>>>> 

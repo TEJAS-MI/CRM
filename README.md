@@ -46,7 +46,7 @@ Check order status and order date
 Contact support details shown in footer
 
 📂 Folder Structure
-
+=====
 CRM/
 │── accounts/
 │   ├── templates/accounts/
@@ -97,7 +97,7 @@ CRM/
 ├── manage.py
 ├── README.md
 └── requirements.txt
-
+=====
 # Installation & Setup
 
 1) Clone the Repository

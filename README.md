@@ -1,9 +1,9 @@
 # CRM Management System (Django)
 
 A fully functional Customer Relationship Management (CRM) web application built using Django.
-This project helps admins manage customers, orders, and products, while customers can log in and view their own order dashboard.
+Admins can manage customers, products, and orders, while customers can log in to view their personal dashboard and track order status.
 
-This project is ideal for internship showcase, portfolio, or learning Django CRUD, authentication, signals, filters, and relational models.
+This project is ideal for internships, portfolio projects, and learning Django CRUD, authentication, filters, signals, and relational models.
 
 # Features
 
@@ -13,11 +13,11 @@ Add / Edit / Delete Customers
 
 Add / Edit / Delete Products
 
-Manage Orders and update their status
+Manage Orders and update status
 
-Add multiple tags to products
+Assign multiple tags to products
 
-View complete dashboard:
+View powerful dashboard:
 
 Total Orders
 
@@ -25,25 +25,25 @@ Delivered Orders
 
 Pending Orders
 
-Automatic profile creation for customers via Django signals
+Automatic customer profile creation using Django Signals
 
 Access to Django Admin Panel
 
 # Customer Features
 
-Login using username & password
+Register & Login using username/password
 
 View personal dashboard with:
 
 Total Orders
 
-Order history
+Order History
 
-Pending / Delivered order counts
+Delivered / Pending Status
 
-Check order status and order date
+Order Date
 
-Contact support details shown in footer
+Contact Support shown in footer
 
 ## 📁 Project Folder Structure
 
@@ -99,35 +99,38 @@ CRM/
 └── requirements.txt
 ```
 
+
 # Installation & Setup
 
-1) Clone the Repository
+1️) Clone the Repository
 git clone https://github.com/TEJAS-MI/CRM.git
-cd YOUR-REPO
+cd CRM
 
-2) Create Virtual Environment
+2️) Create Virtual Environment
 
 Windows:
 
 python -m venv myenv
 myenv\Scripts\activate
 
-3) Install Requirements
+3️) Install Dependencies
 pip install -r requirements.txt
 
-4) Apply Migrations
+4️) Apply Migrations
 python manage.py migrate
 
 5) Create Superuser
 python manage.py createsuperuser
 
-6) Run Server
+6️) Run Server
 python manage.py runserver
 
+# URLs
 
-# Open app → http://127.0.0.1:8000
+Feature	URL
+Application	http://127.0.0.1:8000
 
-# Admin panel → http://127.0.0.1:8000/admin/
+Admin Panel	http://127.0.0.1:8000/admin
 
 # Technologies Used
 
@@ -139,18 +142,23 @@ SQLite / MySQL
 
 Django Filters
 
-HTML, CSS, Bootstrap
+Authentication System
 
-Django Authentication & Signals
+Bootstrap, HTML, CSS
 
-* Contact Support (Shown on Customer Dashboard Footer)
-* Customer Support: 9876543210  
-* support@crm.com  
-* Working Hours: 9 AM – 6 PM
+Django Signals
+
+# Contact Support (Displayed on Customer Dashboard Footer)
+
+Customer Support: 9876543210
+
+Email: support@crm.com
+
+Working Hours: 9 AM – 6 PM
 
 # Future Enhancements
 
-Customer product ordering system
+Online product ordering system for customers
 
 Payment gateway integration
 
@@ -158,4 +166,4 @@ Email notifications for order updates
 
 Deployment on Render / AWS
 
-Add user profile images
+User profile pictures

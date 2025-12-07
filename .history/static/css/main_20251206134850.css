@@ -1,0 +1,25 @@
+#logo {
+    height: 55px;       /* perfect Dennis Ivy size */
+    width: auto;
+    margin-right: 30px; /* space between logo and menu */
+    margin-left: 15px;
+}
+
+
+body{
+	background-color: #ebeff5;
+}
+
+
+#total-orders{
+	background-color: #4cb4c7;
+}
+
+
+#orders-delivered{
+	background-color: #7abecc;
+}
+
+#orders-pending{
+	background-color: #7CD1C0;
+}

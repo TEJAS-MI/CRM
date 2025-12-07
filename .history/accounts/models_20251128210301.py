@@ -1,0 +1,34 @@
+from unicodedata import category
+from django.db import models
+
+from tkinter.tix import STATUS
+
+# Create your models here.
+
+class Customer(models.Model):
+    name=models.CharField(max_length=200,  null=True)
+    phone=models.CharField(max_length=200, null=True)
+    email=models.CharField(max_length=200,  null=True)
+    date_created=models.DateTimeField(auto_now_add=True,  null=True)
+
+    def __str__(self):
+        return self.name
+    
+    class Product(models.Model):
+        name=models.CharField(max_length=200,  null=True)
+        price=models.FloatField(null=True)
+        category=models.CharField(max_length=200,  null=True)
+        description=models.CharField(max_length=200,  null=True)
+        date_created=models.DateTimeField(auto_now_add=True,  null=True)
+
+
+class order(models.Model):
+     STATUS=(
+         ('pending','pending'),
+         ('out for delivery','out for delivery'),
+         ()
+     )
+    #customer=
+    #product=
+     date_created=models.DateTimeField(auto_now_add=True,  null=True)
+     status= models.CharField(max_length=200,  null=True)

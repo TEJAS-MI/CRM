@@ -97,14 +97,6 @@ CRM/
 ├── manage.py
 ├── README.md
 └── requirements.txt
-```
-=======
-│── js/
-│── manage.py
-│── db.sqlite3
-│── requirements.txt
-│── README.md
-│── .gitignore
 
 # Installation & Setup
 

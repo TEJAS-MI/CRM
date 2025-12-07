@@ -1,58 +1,54 @@
+🧾 CRM Management System (Django)
+
+A fully functional Customer Relationship Management (CRM) web application built using Django.
+This project helps admins manage customers, orders, and products, while customers can log in and view their own order dashboard.
+
+This project is ideal for internship showcase, portfolio, or learning Django CRUD, authentication, signals, filters, and relational models.
+
 🚀 Features
-🔐 Authentication
+👨‍💼 Admin Features
 
-User registration & login
+Add / Edit / Delete Customers
 
-Role-based access control (Admin & Customer)
+Add / Edit / Delete Products
 
-Password reset via email (SMTP configured)
+Manage Orders and update their status
 
-🧑‍💼 Admin Features
+Add multiple tags to products
 
-Dashboard with total orders, delivered, pending counts
+View complete dashboard:
 
-Add / update / delete customers
+Total Orders
 
-Add / update / delete products
+Delivered Orders
 
-Add / update / delete orders
+Pending Orders
 
-Order filtering using Django Filters
+Automatic profile creation for customers via Django signals
 
-Admin-only access to products & dashboard
-
-Auto-create Customer profile when a user registers (signals)
+Access to Django Admin Panel
 
 👤 Customer Features
 
-View total orders
+Login using username & password
 
-View delivered & pending orders
+View personal dashboard with:
 
-See personal order history
+Total Orders
 
-View contact support info in footer
+Order history
 
-Simple and clean UI
+Pending / Delivered order counts
 
-🛠 Tech Stack
-Technology	Purpose
-Python 3.x	Backend logic
-Django 5	Web framework
-MySQL	Database
-PyMySQL	MySQL Driver
-HTML, CSS, Bootstrap	Frontend UI
-Django Filters	Search & Filtering
-Pillow	Image support
-📂 Project Structure
+Check order status and order date
 
-Your folder structure:
+Contact support details shown in footer
 
+📂 Folder Structure (Based on Your Screenshot)
 CRM/
 │── accounts/
-│   │── migrations/
-│   │── templates/accounts/
-│   │   ├── account_settings.html
+│   ├── templates/accounts/
+│   │   ├── account_setting.html
 │   │   ├── customer.html
 │   │   ├── dashboard.html
 │   │   ├── delete.html
@@ -62,123 +58,99 @@ CRM/
 │   │   ├── order_form.html
 │   │   ├── password_reset.html
 │   │   ├── password_reset_done.html
-│   │   ├── password_reset_sent.html
+│   │   ├── password_reset_email.html
+│   │   ├── password_reset_form.html
 │   │   ├── products.html
 │   │   ├── register.html
 │   │   ├── status.html
 │   │   ├── user.html
-│   │── admin.py
-│   │── apps.py
-│   │── decorators.py
-│   │── filters.py
-│   │── forms.py
-│   │── models.py
-│   │── signals.py
-│   │── urls.py
-│   │── views.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── decorators.py
+│   ├── filters.py
+│   ├── forms.py
+│   ├── models.py
+│   ├── signals.py
+│   ├── urls.py
+│   ├── views.py
 │
 │── crm/
-│   │── settings.py
-│   │── urls.py
-│   │── wsgi.py
-│   │── asgi.py
+│   ├── asgi.py
+│   ├── settings.py
+│   ├── urls.py
+│   ├── wsgi.py
 │
 │── static/
-│   │── css/main.css
-│   │── images/
+│   ├── css/main.css
+│   ├── images/
 │       ├── logo.png
-│       ├── ML_Profile_pic.jpg
 │       ├── profile1.png
 │       ├── profile2.png
-│       └── YouTube-Subs.png
+│       ├── ML_profile_pic...
 │
-│── .gitignore
+│── js/
 │── manage.py
-│── db.sqlite3 (only for development)
+│── db.sqlite3
+│── requirements.txt
+│── README.md
+│── .gitignore
 
-⚙️ Installation Guide
+⚙️ Installation & Setup
 1️⃣ Clone the Repository
-git clone https://github.com/<your-username>/crm.git
-cd crm
+git clone https://github.com/YOUR-USERNAME/YOUR-REPO.git
+cd YOUR-REPO
 
 2️⃣ Create Virtual Environment
+
+Windows:
+
 python -m venv myenv
 myenv\Scripts\activate
 
-3️⃣ Install Dependencies
+3️⃣ Install Requirements
 pip install -r requirements.txt
 
-
-If you don’t have requirements.txt, I can generate one for you. ✔️
-
-4️⃣ MySQL Database Setup
-
-Open MySQL & run:
-
-CREATE DATABASE crmdb;
-CREATE USER 'crmuser'@'localhost' IDENTIFIED BY 'YourPassword';
-GRANT ALL PRIVILEGES ON crmdb.* TO 'crmuser'@'localhost';
-FLUSH PRIVILEGES;
-
-
-Update your crm/settings.py:
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'crmdb',
-        'USER': 'crmuser',
-        'PASSWORD': 'YourPassword',
-        'HOST': 'localhost',
-        'PORT': '3306',
-    }
-}
-
-5️⃣ Run Migrations
+4️⃣ Apply Migrations
 python manage.py migrate
 
-6️⃣ Create Superuser (Admin)
+5️⃣ Create Superuser
 python manage.py createsuperuser
 
-7️⃣ Start Development Server
+6️⃣ Run Server
 python manage.py runserver
 
 
-Visit → http://127.0.0.1:8000/
+✔ Open app → http://127.0.0.1:8000
 
-🔐 User Roles Explained
-🧑‍💼 Admin (created via createsuperuser)
+✔ Admin panel → http://127.0.0.1:8000/admin/
 
-Full access to dashboard
+🛠️ Technologies Used
 
-Can add orders/products/customers
+Django
 
-Can see all customers
+Python 3
 
-👤 Customer (registered via register page)
+SQLite / MySQL
 
-Can login
+Django Filters
 
-Can only see their own orders
+HTML, CSS, Bootstrap
 
-Cannot access /products/ or /customers/
+Django Authentication & Signals
 
-📞 Support Section (Footer)
+📞 Contact Support (Shown on Customer Dashboard Footer)
 📞 Customer Support: 9876543210  
 📧 support@crm.com  
-⌚ Working Hours: 9 AM – 6 PM  
+⏰ Working Hours: 9 AM – 6 PM
 
+📌 Future Enhancements
 
-Added inside user.html or main footer.
+Customer product ordering system
 
-🚀 Future Improvements
+Payment gateway integration
 
-Customer order placing system
+Email notifications for order updates
 
-Product catalog
+Deployment on Render / AWS
 
-Payment integration (Razorpay)
-
-Admin notifications
-
-Deploy on Render.com / AWS
+Add user profile images

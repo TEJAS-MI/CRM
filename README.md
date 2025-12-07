@@ -171,4 +171,4 @@ Email notifications for order updates
 Deployment on Render / AWS
 
 Add user profile images
->>>>>>> 3813c96dc2873050eed70b9888c1b8fb93baf351
+>>>>>>> 

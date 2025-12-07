@@ -99,7 +99,7 @@ CRM/
 # Installation & Setup
 
 1) Clone the Repository
-git clone https://github.com/YOUR-USERNAME/YOUR-REPO.git
+git clone https://github.com/TEJAS-MI/CRM.git
 cd YOUR-REPO
 
 2) Create Virtual Environment

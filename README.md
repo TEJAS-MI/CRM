@@ -45,8 +45,9 @@ Check order status and order date
 
 Contact support details shown in footer
 
-📂 Folder Structure
-<<<
+## 📁 Project Folder Structure
+
+```text
 CRM/
 │── accounts/
 │   ├── templates/accounts/
@@ -91,13 +92,13 @@ CRM/
 │       ├── ML_profile_pic2.png
 │       └── profile.png
 │
-<<<<<<< HEAD
 ├── js/
 ├── db.sqlite3
 ├── manage.py
 ├── README.md
 └── requirements.txt
->>>
+```
+
 # Installation & Setup
 
 1) Clone the Repository

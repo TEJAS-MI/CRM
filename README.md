@@ -1,12 +1,13 @@
-🧾 CRM Management System (Django)
+# CRM Management System (Django)
 
 A fully functional Customer Relationship Management (CRM) web application built using Django.
 This project helps admins manage customers, orders, and products, while customers can log in and view their own order dashboard.
 
 This project is ideal for internship showcase, portfolio, or learning Django CRUD, authentication, signals, filters, and relational models.
 
-🚀 Features
-👨‍💼 Admin Features
+# Features
+
+# Admin Features
 
 Add / Edit / Delete Customers
 
@@ -28,7 +29,7 @@ Automatic profile creation for customers via Django signals
 
 Access to Django Admin Panel
 
-👤 Customer Features
+# Customer Features
 
 Login using username & password
 
@@ -95,36 +96,37 @@ CRM/
 │── README.md
 │── .gitignore
 
-⚙️ Installation & Setup
-1️⃣ Clone the Repository
+# Installation & Setup
+
+1) Clone the Repository
 git clone https://github.com/YOUR-USERNAME/YOUR-REPO.git
 cd YOUR-REPO
 
-2️⃣ Create Virtual Environment
+2) Create Virtual Environment
 
 Windows:
 
 python -m venv myenv
 myenv\Scripts\activate
 
-3️⃣ Install Requirements
+3) Install Requirements
 pip install -r requirements.txt
 
-4️⃣ Apply Migrations
+4) Apply Migrations
 python manage.py migrate
 
-5️⃣ Create Superuser
+5) Create Superuser
 python manage.py createsuperuser
 
-6️⃣ Run Server
+6) Run Server
 python manage.py runserver
 
 
-✔ Open app → http://127.0.0.1:8000
+# Open app → http://127.0.0.1:8000
 
-✔ Admin panel → http://127.0.0.1:8000/admin/
+# Admin panel → http://127.0.0.1:8000/admin/
 
-🛠️ Technologies Used
+# Technologies Used
 
 Django
 
@@ -138,12 +140,12 @@ HTML, CSS, Bootstrap
 
 Django Authentication & Signals
 
-📞 Contact Support (Shown on Customer Dashboard Footer)
-📞 Customer Support: 9876543210  
-📧 support@crm.com  
-⏰ Working Hours: 9 AM – 6 PM
+* Contact Support (Shown on Customer Dashboard Footer)
+* Customer Support: 9876543210  
+* support@crm.com  
+* Working Hours: 9 AM – 6 PM
 
-📌 Future Enhancements
+# Future Enhancements
 
 Customer product ordering system
 
